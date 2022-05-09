@@ -1,7 +1,8 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
-
-
+	const value = document.querySelector(".price")
+	document.querySelectorAll(".product").forEach(x => {
+		x.setAttribute("data-price", value.innerHTML)
+	})
 });
